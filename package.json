@@ -1,5 +1,5 @@
 {
-  "name": "vue3.4-template",
+  "name": "vue3-smooth-dnd-ts",
   "version": "1.0.1",
   "private": true,
   "type": "module",
@@ -17,6 +17,7 @@
     "cz": "git add . && git-cz"
   },
   "dependencies": {
+    "smooth-dnd": "^0.12.1",
     "vue": "3.4.21"
   },
   "devDependencies": {
