@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "jsx": "preserve"
+  },
+  "include": ["src/index.ts", "src/packages/**/*"],
+  "exclude": ["node_modules", "**/__tests__/**"]
+}

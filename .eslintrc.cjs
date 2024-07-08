@@ -1,23 +1,6 @@
 /* eslint-env node */
 require('@rushstack/eslint-patch/modern-module-resolution')
 
-// module.exports = {
-//   root: true,
-//   extends: [
-//     'plugin:vue/vue3-essential',
-//     'eslint:recommended',
-//     '@vue/eslint-config-typescript',
-//     '@vue/eslint-config-prettier/skip-formatting',
-//   ],
-//   parserOptions: {
-//     ecmaVersion: 'latest',
-//   },
-//   rules: {
-//     'no-debugger': 'warn',
-//     'vue/multi-word-component-names': 'off',
-//   },
-// }
-
 module.exports = {
   root: true,
   extends: [
@@ -31,15 +14,15 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
-  // overrides: [
-  //   {
-  //     files: ['*.ts', '*.tsx', '*.vue'],
-  //     rules: {
-  //       // 解决 ts 全局类型定义后，eslint报错的问题
-  //       'no-undef': 'off',
-  //     },
-  //   },
-  // ],
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx', '*.vue'],
+      rules: {
+        // 解决 ts 全局类型定义后，eslint报错的问题
+        'no-undef': 'off',
+      },
+    },
+  ],
   // 解决@别名识别问题
   settings: {
     'import/resolver': {
@@ -50,6 +33,8 @@ module.exports = {
   },
   rules: {
     'import/no-extraneous-dependencies': 'off',
+    'vue/multi-word-component-names': 'off',
+    'no-restricted-syntax': 'off',
     // 对后缀的检测
     'import/extensions': [
       'error',
