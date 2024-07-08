@@ -1,6 +1,6 @@
 {
   "name": "vue3-smooth-dnd-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "dist/index.umd.cjs",
   "module": "dist/index.es.ts",
@@ -15,7 +15,8 @@
     "./*": "./*"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "prepare": "husky install",
